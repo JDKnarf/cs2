@@ -1,68 +1,74 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "maple",
+  "name": "CS 点位全攻略",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FFB800",
+    "light": "#FFD966",
+    "dark": "#C47F00"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "地图攻略",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Mirage",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "mirage/index",
+              "mirage/T/a-site",
+              "mirage/T/b-site",
+              "mirage/T/mid",
+              "mirage/CT/a-site",
+              "mirage/CT/b-site",
+              "mirage/CT/mid"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Inferno",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "inferno/index",
+              "inferno/T/a-site",
+              "inferno/T/b-site",
+              "inferno/CT/a-site",
+              "inferno/CT/b-site",
+              "inferno/banana"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Dust2",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "dust2/index",
+              "dust2/T/a-site",
+              "dust2/T/b-site",
+              "dust2/T/mid",
+              "dust2/CT/a-site",
+              "dust2/CT/b-site",
+              "dust2/CT/mid"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "常用工具",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "道具库",
             "pages": [
-              "api-reference/introduction"
+              "nades/smokes",
+              "nades/flashes",
+              "nades/molotovs",
+              "nades/grenades"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "战术思路",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "tactics/executions",
+              "tactics/retakes",
+              "tactics/anti-rush",
+              "tactics/post-plant"
             ]
           }
         ]
@@ -71,19 +77,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "anchor": "社区",
+          "href": "https://discord.gg/xxx",
           "icon": "slack"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "职业 Demo",
+          "href": "https://hltv.org",
+          "icon": "film"
         }
       ]
     }
@@ -95,33 +96,27 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "反馈",
+        "href": "mailto:feedback@yourdomain.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "参与贡献",
+      "href": "https://github.com/your-repo"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/yourproject",
+      "github": "https://github.com/your-repo",
+      "youtube": "https://youtube.com/@yourproject"
     }
   }
 }
