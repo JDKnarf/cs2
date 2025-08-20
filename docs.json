@@ -8,67 +8,350 @@
     "dark": "#C47F00"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "地图攻略",
+        "tab": "地图索引",
         "groups": [
           {
             "group": "Mirage",
-            "pages": [
-              "mirage/index",
-              "mirage/T/a-site",
-              "mirage/T/b-site",
-              "mirage/T/mid",
-              "mirage/CT/a-site",
-              "mirage/CT/b-site",
-              "mirage/CT/mid"
+            "pages": ["mirage/index"],
+            "groups": [
+              {
+                "group": "烟雾弹 (Smokes)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "mirage/smokes/a/ct-smoke",
+                      "mirage/smokes/a/jungle-smoke",
+                      "mirage/smokes/a/stairs-smoke"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "mirage/smokes/b/market-smoke",
+                      "mirage/smokes/b/bench-smoke"
+                    ]
+                  },
+                  {
+                    "group": "中路",
+                    "pages": [
+                      "mirage/smokes/mid/window-smoke",
+                      "mirage/smokes/mid/connector-smoke"
+                    ]
+                  },
+                  {
+                    "group": "其他",
+                    "pages": [
+                      "mirage/smokes/other/ticket-smoke"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "燃烧瓶 (Molotovs)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "mirage/molotovs/a/default-molly",
+                      "mirage/molotovs/a/triple-molly"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "mirage/molotovs/b/van-molly",
+                      "mirage/molotovs/b/backsite-molly"
+                    ]
+                  },
+                  {
+                    "group": "中路",
+                    "pages": [
+                      "mirage/molotovs/mid/cat-control-molly",
+                      "mirage/molotovs/mid/window-deny-molly"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "闪光弹 (Flashes)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "mirage/flashes/a/palace-pop-flash",
+                      "mirage/flashes/a/ramp-entry-flash"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "mirage/flashes/b/market-pop-flash",
+                      "mirage/flashes/b/short-pop-flash"
+                    ]
+                  },
+                  {
+                    "group": "中路",
+                    "pages": [
+                      "mirage/flashes/mid/top-mid-pop",
+                      "mirage/flashes/mid/window-peek-flash"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "手雷 (HE)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "mirage/grenades/a/ramp-anti-rush-nade",
+                      "mirage/grenades/a/palace-drop-nade"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "mirage/grenades/b/tunnel-stop-nade",
+                      "mirage/grenades/b/van-damage-nade"
+                    ]
+                  },
+                  {
+                    "group": "中路",
+                    "pages": [
+                      "mirage/grenades/mid/top-mid-chip-nade"
+                    ]
+                  }
+                ]
+              }
             ]
           },
           {
             "group": "Inferno",
-            "pages": [
-              "inferno/index",
-              "inferno/T/a-site",
-              "inferno/T/b-site",
-              "inferno/CT/a-site",
-              "inferno/CT/b-site",
-              "inferno/banana"
+            "pages": ["inferno/index"],
+            "groups": [
+              {
+                "group": "烟雾弹 (Smokes)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "inferno/smokes/a/pit-smoke",
+                      "inferno/smokes/a/library-smoke",
+                      "inferno/smokes/a/arch-smoke"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "inferno/smokes/b/ct-smoke",
+                      "inferno/smokes/b/coffins-smoke"
+                    ]
+                  },
+                  {
+                    "group": "中路 / 二中",
+                    "pages": [
+                      "inferno/smokes/mid/top-mid-smoke"
+                    ]
+                  },
+                  {
+                    "group": "Banana",
+                    "pages": [
+                      "inferno/smokes/banana/top-banana-smoke"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "燃烧瓶 (Molotovs)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "inferno/molotovs/a/pit-molly",
+                      "inferno/molotovs/a/boiler-molly"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "inferno/molotovs/b/first-oranges-molly",
+                      "inferno/molotovs/b/new-box-molly"
+                    ]
+                  },
+                  {
+                    "group": "Banana",
+                    "pages": [
+                      "inferno/molotovs/banana/car-molly",
+                      "inferno/molotovs/banana/sandbags-molly"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "闪光弹 (Flashes)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "inferno/flashes/a/short-pop-flash",
+                      "inferno/flashes/a/long-peek-flash"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "inferno/flashes/b/coffins-retake-flash",
+                      "inferno/flashes/b/banana-entry-flash"
+                    ]
+                  },
+                  {
+                    "group": "Banana",
+                    "pages": [
+                      "inferno/flashes/banana/deep-banana-pop"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "手雷 (HE)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "inferno/grenades/a/site-deny-nade",
+                      "inferno/grenades/a/porch-chip-nade"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "inferno/grenades/b/banana-stop-nade",
+                      "inferno/grenades/b/coffins-chip-nade"
+                    ]
+                  },
+                  {
+                    "group": "Banana",
+                    "pages": [
+                      "inferno/grenades/banana/rush-deny-nade"
+                    ]
+                  }
+                ]
+              }
             ]
           },
           {
             "group": "Dust2",
-            "pages": [
-              "dust2/index",
-              "dust2/T/a-site",
-              "dust2/T/b-site",
-              "dust2/T/mid",
-              "dust2/CT/a-site",
-              "dust2/CT/b-site",
-              "dust2/CT/mid"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "常用工具",
-        "groups": [
-          {
-            "group": "道具库",
-            "pages": [
-              "nades/smokes",
-              "nades/flashes",
-              "nades/molotovs",
-              "nades/grenades"
-            ]
-          },
-          {
-            "group": "战术思路",
-            "pages": [
-              "tactics/executions",
-              "tactics/retakes",
-              "tactics/anti-rush",
-              "tactics/post-plant"
+            "pages": ["dust2/index"],
+            "groups": [
+              {
+                "group": "烟雾弹 (Smokes)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "dust2/smokes/a/long-cross-smokes",
+                      "dust2/smokes/a/short-oneway-smoke"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "dust2/smokes/b/window-smoke",
+                      "dust2/smokes/b/door-smoke"
+                    ]
+                  },
+                  {
+                    "group": "中路",
+                    "pages": [
+                      "dust2/smokes/mid/xbox-smoke",
+                      "dust2/smokes/mid/mid-to-b-smoke"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "燃烧瓶 (Molotovs)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "dust2/molotovs/a/goose-molly",
+                      "dust2/molotovs/a/ninja-molly"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "dust2/molotovs/b/backsite-molly",
+                      "dust2/molotovs/b/plat-molly"
+                    ]
+                  },
+                  {
+                    "group": "中路",
+                    "pages": [
+                      "dust2/molotovs/mid/window-deny-molly"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "闪光弹 (Flashes)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "dust2/flashes/a/long-pop-flash",
+                      "dust2/flashes/a/short-pop-flash"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "dust2/flashes/b/tunnel-pop-flash",
+                      "dust2/flashes/b/door-retake-flash"
+                    ]
+                  },
+                  {
+                    "group": "中路",
+                    "pages": [
+                      "dust2/flashes/mid/doors-peek-flash"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "手雷 (HE)",
+                "groups": [
+                  {
+                    "group": "A 区",
+                    "pages": [
+                      "dust2/grenades/a/long-rush-nade",
+                      "dust2/grenades/a/short-chip-nade"
+                    ]
+                  },
+                  {
+                    "group": "B 区",
+                    "pages": [
+                      "dust2/grenades/b/tunnel-stop-nade",
+                      "dust2/grenades/b/backsite-chip-nade"
+                    ]
+                  },
+                  {
+                    "group": "中路",
+                    "pages": [
+                      "dust2/grenades/mid/doors-chip-nade"
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -77,21 +360,12 @@
     "global": {
       "anchors": [
         {
-          "anchor": "社区",
-          "href": "https://discord.gg/xxx",
-          "icon": "slack"
-        },
-        {
-          "anchor": "职业 Demo",
-          "href": "https://hltv.org",
-          "icon": "film"
+          "anchor": "提交点位",
+          "href": "https://github.com/your-repo",
+          "icon": "rocket-launch"
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
@@ -107,16 +381,11 @@
     }
   },
   "contextual": {
-    "options": [
-      "copy",
-      "view"
-    ]
+    "options": ["copy", "view"]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/yourproject",
-      "github": "https://github.com/your-repo",
-      "youtube": "https://youtube.com/@yourproject"
+      "github": "https://github.com/your-repo"
     }
   }
 }
