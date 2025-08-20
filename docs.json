@@ -260,6 +260,14 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Contribute ↗",
+        "href": "https://github.com/JDKnarf/games"
+      },
+      {
+        "tab": "Author ↗",
+        "href": "https://sihanc.com"
       }
     ]
   }
