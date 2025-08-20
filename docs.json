@@ -1,52 +1,57 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "CS 点位全索引",
+  "name": "GAMES",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#FFB800",
-    "light": "#FFD966",
-    "dark": "#C47F00"
+    "primary": "#FF6600",
+    "light": "#FF8533",
+    "dark": "#CC5200"
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "地图索引",
+        "tab": "CS2",
         "groups": [
           {
-            "group": "Mirage",
+            "group": "概览",
             "pages": [
-              "mirage/index",
+              "cs2/overview"
+            ]
+          },
+          {
+            "group": "Dust2",
+            "pages": [
               {
                 "group": "烟雾弹 (Smokes)",
                 "pages": [
-                  { "group": "A 区", "pages": ["mirage/smokes/a/ct-smoke", "mirage/smokes/a/jungle-smoke", "mirage/smokes/a/stairs-smoke"] },
-                  { "group": "B 区", "pages": ["mirage/smokes/b/market-smoke", "mirage/smokes/b/bench-smoke"] },
-                  { "group": "中路", "pages": ["mirage/smokes/mid/window-smoke", "mirage/smokes/mid/connector-smoke"] },
-                  { "group": "其他", "pages": ["mirage/smokes/other/ticket-smoke"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/dust2/smokes/a/long-cross-smokes", "cs2/lineup/dust2/smokes/a/short-oneway-smoke"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/dust2/smokes/b/window-smoke", "cs2/lineup/dust2/smokes/b/door-smoke"] },
+                  { "group": "中路", "pages": ["cs2/lineup/dust2/smokes/mid/xbox-smoke", "cs2/lineup/dust2/smokes/mid/mid-to-b-smoke"] }
                 ]
               },
               {
                 "group": "燃烧瓶 (Molotovs)",
                 "pages": [
-                  { "group": "A 区", "pages": ["mirage/molotovs/a/default-molly", "mirage/molotovs/a/triple-molly"] },
-                  { "group": "B 区", "pages": ["mirage/molotovs/b/van-molly", "mirage/molotovs/b/backsite-molly"] },
-                  { "group": "中路", "pages": ["mirage/molotovs/mid/cat-control-molly", "mirage/molotovs/mid/window-deny-molly"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/dust2/molotovs/a/goose-molly", "cs2/lineup/dust2/molotovs/a/ninja-molly"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/dust2/molotovs/b/backsite-molly", "cs2/lineup/dust2/molotovs/b/plat-molly"] },
+                  { "group": "中路", "pages": ["cs2/lineup/dust2/molotovs/mid/window-deny-molly"] }
                 ]
               },
               {
                 "group": "闪光弹 (Flashes)",
                 "pages": [
-                  { "group": "A 区", "pages": ["mirage/flashes/a/palace-pop-flash", "mirage/flashes/a/ramp-entry-flash"] },
-                  { "group": "B 区", "pages": ["mirage/flashes/b/market-pop-flash", "mirage/flashes/b/short-pop-flash"] },
-                  { "group": "中路", "pages": ["mirage/flashes/mid/top-mid-pop", "mirage/flashes/mid/window-peek-flash"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/dust2/flashes/a/long-pop-flash", "cs2/lineup/dust2/flashes/a/short-pop-flash"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/dust2/flashes/b/tunnel-pop-flash", "cs2/lineup/dust2/flashes/b/door-retake-flash"] },
+                  { "group": "中路", "pages": ["cs2/lineup/dust2/flashes/mid/doors-peek-flash"] }
                 ]
               },
               {
                 "group": "手雷 (HE)",
                 "pages": [
-                  { "group": "A 区", "pages": ["mirage/grenades/a/ramp-anti-rush-nade", "mirage/grenades/a/palace-drop-nade"] },
-                  { "group": "B 区", "pages": ["mirage/grenades/b/tunnel-stop-nade", "mirage/grenades/b/van-damage-nade"] },
-                  { "group": "中路", "pages": ["mirage/grenades/mid/top-mid-chip-nade"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/dust2/grenades/a/long-rush-nade", "cs2/lineup/dust2/grenades/a/short-chip-nade"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/dust2/grenades/b/tunnel-stop-nade", "cs2/lineup/dust2/grenades/b/backsite-chip-nade"] },
+                  { "group": "中路", "pages": ["cs2/lineup/dust2/grenades/mid/doors-chip-nade"] }
                 ]
               }
             ]
@@ -54,76 +59,202 @@
           {
             "group": "Inferno",
             "pages": [
-              "inferno/index",
               {
                 "group": "烟雾弹 (Smokes)",
                 "pages": [
-                  { "group": "A 区", "pages": ["inferno/smokes/a/pit-smoke", "inferno/smokes/a/library-smoke", "inferno/smokes/a/arch-smoke"] },
-                  { "group": "B 区", "pages": ["inferno/smokes/b/ct-smoke", "inferno/smokes/b/coffins-smoke"] },
-                  { "group": "中路 / 二中", "pages": ["inferno/smokes/mid/top-mid-smoke"] },
-                  { "group": "Banana", "pages": ["inferno/smokes/banana/top-banana-smoke"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/inferno/smokes/a/pit-smoke", "cs2/lineup/inferno/smokes/a/library-smoke", "cs2/lineup/inferno/smokes/a/arch-smoke"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/inferno/smokes/b/ct-smoke", "cs2/lineup/inferno/smokes/b/coffins-smoke"] },
+                  { "group": "中路 / 二中", "pages": ["cs2/lineup/inferno/smokes/mid/top-mid-smoke"] },
+                  { "group": "Banana", "pages": ["cs2/lineup/inferno/smokes/banana/top-banana-smoke"] }
                 ]
               },
               {
                 "group": "燃烧瓶 (Molotovs)",
                 "pages": [
-                  { "group": "A 区", "pages": ["inferno/molotovs/a/pit-molly", "inferno/molotovs/a/boiler-molly"] },
-                  { "group": "B 区", "pages": ["inferno/molotovs/b/first-oranges-molly", "inferno/molotovs/b/new-box-molly"] },
-                  { "group": "Banana", "pages": ["inferno/molotovs/banana/car-molly", "inferno/molotovs/banana/sandbags-molly"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/inferno/molotovs/a/pit-molly", "cs2/lineup/inferno/molotovs/a/boiler-molly"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/inferno/molotovs/b/first-oranges-molly", "cs2/lineup/inferno/molotovs/b/new-box-molly"] },
+                  { "group": "Banana", "pages": ["cs2/lineup/inferno/molotovs/banana/car-molly", "cs2/lineup/inferno/molotovs/banana/sandbags-molly"] }
                 ]
               },
               {
                 "group": "闪光弹 (Flashes)",
                 "pages": [
-                  { "group": "A 区", "pages": ["inferno/flashes/a/short-pop-flash", "inferno/flashes/a/long-peek-flash"] },
-                  { "group": "B 区", "pages": ["inferno/flashes/b/coffins-retake-flash", "inferno/flashes/b/banana-entry-flash"] },
-                  { "group": "Banana", "pages": ["inferno/flashes/banana/deep-banana-pop"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/inferno/flashes/a/short-pop-flash", "cs2/lineup/inferno/flashes/a/long-peek-flash"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/inferno/flashes/b/coffins-retake-flash", "cs2/lineup/inferno/flashes/b/banana-entry-flash"] },
+                  { "group": "Banana", "pages": ["cs2/lineup/inferno/flashes/banana/deep-banana-pop"] }
                 ]
               },
               {
                 "group": "手雷 (HE)",
                 "pages": [
-                  { "group": "A 区", "pages": ["inferno/grenades/a/site-deny-nade", "inferno/grenades/a/porch-chip-nade"] },
-                  { "group": "B 区", "pages": ["inferno/grenades/b/banana-stop-nade", "inferno/grenades/b/coffins-chip-nade"] },
-                  { "group": "Banana", "pages": ["inferno/grenades/banana/rush-deny-nade"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/inferno/grenades/a/site-deny-nade", "cs2/lineup/inferno/grenades/a/porch-chip-nade"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/inferno/grenades/b/banana-stop-nade", "cs2/lineup/inferno/grenades/b/coffins-chip-nade"] },
+                  { "group": "Banana", "pages": ["cs2/lineup/inferno/grenades/banana/rush-deny-nade"] }
                 ]
               }
             ]
           },
           {
-            "group": "Dust2",
+            "group": "Mirage",
             "pages": [
-              "dust2/index",
               {
                 "group": "烟雾弹 (Smokes)",
                 "pages": [
-                  { "group": "A 区", "pages": ["dust2/smokes/a/long-cross-smokes", "dust2/smokes/a/short-oneway-smoke"] },
-                  { "group": "B 区", "pages": ["dust2/smokes/b/window-smoke", "dust2/smokes/b/door-smoke"] },
-                  { "group": "中路", "pages": ["dust2/smokes/mid/xbox-smoke", "dust2/smokes/mid/mid-to-b-smoke"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/mirage/smokes/a/ct-smoke", "cs2/lineup/mirage/smokes/a/jungle-smoke", "cs2/lineup/mirage/smokes/a/stairs-smoke"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/mirage/smokes/b/market-smoke", "cs2/lineup/mirage/smokes/b/bench-smoke"] },
+                  { "group": "中路", "pages": ["cs2/lineup/mirage/smokes/mid/window-smoke", "cs2/lineup/mirage/smokes/mid/connector-smoke"] },
+                  { "group": "其他", "pages": ["cs2/lineup/mirage/smokes/other/ticket-smoke"] }
                 ]
               },
               {
                 "group": "燃烧瓶 (Molotovs)",
                 "pages": [
-                  { "group": "A 区", "pages": ["dust2/molotovs/a/goose-molly", "dust2/molotovs/a/ninja-molly"] },
-                  { "group": "B 区", "pages": ["dust2/molotovs/b/backsite-molly", "dust2/molotovs/b/plat-molly"] },
-                  { "group": "中路", "pages": ["dust2/molotovs/mid/window-deny-molly"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/mirage/molotovs/a/default-molly", "cs2/lineup/mirage/molotovs/a/triple-molly"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/mirage/molotovs/b/van-molly", "cs2/lineup/mirage/molotovs/b/backsite-molly"] },
+                  { "group": "中路", "pages": ["cs2/lineup/mirage/molotovs/mid/cat-control-molly", "cs2/lineup/mirage/molotovs/mid/window-deny-molly"] }
                 ]
               },
               {
                 "group": "闪光弹 (Flashes)",
                 "pages": [
-                  { "group": "A 区", "pages": ["dust2/flashes/a/long-pop-flash", "dust2/flashes/a/short-pop-flash"] },
-                  { "group": "B 区", "pages": ["dust2/flashes/b/tunnel-pop-flash", "dust2/flashes/b/door-retake-flash"] },
-                  { "group": "中路", "pages": ["dust2/flashes/mid/doors-peek-flash"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/mirage/flashes/a/palace-pop-flash", "cs2/lineup/mirage/flashes/a/ramp-entry-flash"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/mirage/flashes/b/market-pop-flash", "cs2/lineup/mirage/flashes/b/short-pop-flash"] },
+                  { "group": "中路", "pages": ["cs2/lineup/mirage/flashes/mid/top-mid-pop", "cs2/lineup/mirage/flashes/mid/window-peek-flash"] }
                 ]
               },
               {
                 "group": "手雷 (HE)",
                 "pages": [
-                  { "group": "A 区", "pages": ["dust2/grenades/a/long-rush-nade", "dust2/grenades/a/short-chip-nade"] },
-                  { "group": "B 区", "pages": ["dust2/grenades/b/tunnel-stop-nade", "dust2/grenades/b/backsite-chip-nade"] },
-                  { "group": "中路", "pages": ["dust2/grenades/mid/doors-chip-nade"] }
+                  { "group": "A 区", "pages": ["cs2/lineup/mirage/grenades/a/ramp-anti-rush-nade", "cs2/lineup/mirage/grenades/a/palace-drop-nade"] },
+                  { "group": "B 区", "pages": ["cs2/lineup/mirage/grenades/b/tunnel-stop-nade", "cs2/lineup/mirage/grenades/b/van-damage-nade"] },
+                  { "group": "中路", "pages": ["cs2/lineup/mirage/grenades/mid/top-mid-chip-nade"] }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Valorant",
+        "groups": [
+          {
+            "group": "概览",
+            "pages": [
+              "valorant/overview"
+            ]
+          },
+          {
+            "group": "Bind",
+            "pages": [
+              {
+                "group": "Sova",
+                "pages": [
+                  "valorant/bind/sova/recon-dart-a",
+                  "valorant/bind/sova/recon-dart-b",
+                  "valorant/bind/sova/shock-dart-lineup"
+                ]
+              },
+              {
+                "group": "Brimstone",
+                "pages": [
+                  "valorant/bind/brimstone/smoke-a",
+                  "valorant/bind/brimstone/smoke-b",
+                  "valorant/bind/brimstone/orbital-strike"
+                ]
+              },
+              {
+                "group": "Sage",
+                "pages": [
+                  "valorant/bind/sage/wall-a",
+                  "valorant/bind/sage/wall-b",
+                  "valorant/bind/sage/slow-orb"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Haven",
+            "pages": [
+              {
+                "group": "Sova",
+                "pages": [
+                  "valorant/haven/sova/recon-dart-a",
+                  "valorant/haven/sova/recon-dart-b",
+                  "valorant/haven/sova/recon-dart-c"
+                ]
+              },
+              {
+                "group": "Omen",
+                "pages": [
+                  "valorant/haven/omen/smoke-a",
+                  "valorant/haven/omen/smoke-b",
+                  "valorant/haven/omen/smoke-c"
+                ]
+              },
+              {
+                "group": "Cypher",
+                "pages": [
+                  "valorant/haven/cypher/camera-a",
+                  "valorant/haven/cypher/camera-b",
+                  "valorant/haven/cypher/tripwire"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Split",
+            "pages": [
+              {
+                "group": "Sova",
+                "pages": [
+                  "valorant/split/sova/recon-dart-a",
+                  "valorant/split/sova/recon-dart-b",
+                  "valorant/split/sova/shock-dart"
+                ]
+              },
+              {
+                "group": "Raze",
+                "pages": [
+                  "valorant/split/raze/grenade-a",
+                  "valorant/split/raze/grenade-b",
+                  "valorant/split/raze/satchel-boost"
+                ]
+              },
+              {
+                "group": "Viper",
+                "pages": [
+                  "valorant/split/viper/poison-cloud-a",
+                  "valorant/split/viper/poison-cloud-b",
+                  "valorant/split/viper/toxic-screen"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Ascent",
+            "pages": [
+              {
+                "group": "Sova",
+                "pages": [
+                  "valorant/ascent/sova/recon-dart-a",
+                  "valorant/ascent/sova/recon-dart-b",
+                  "valorant/ascent/sova/shock-dart"
+                ]
+              },
+              {
+                "group": "Killjoy",
+                "pages": [
+                  "valorant/ascent/killjoy/turret-a",
+                  "valorant/ascent/killjoy/turret-b",
+                  "valorant/ascent/killjoy/nanoswarm"
+                ]
+              },
+              {
+                "group": "Jett",
+                "pages": [
+                  "valorant/ascent/jett/updraft-a",
+                  "valorant/ascent/jett/updraft-b",
+                  "valorant/ascent/jett/smoke"
                 ]
               }
             ]
