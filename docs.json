@@ -14,7 +14,7 @@
         "tab": "CS2",
         "groups": [
           {
-            "group": "概览",
+            "group": "Overview",
             "pages": [
               "cs2/overview"
             ]
@@ -138,7 +138,7 @@
         "tab": "Valorant",
         "groups": [
           {
-            "group": "概览",
+            "group": "Overview",
             "pages": [
               "valorant/overview"
             ]
